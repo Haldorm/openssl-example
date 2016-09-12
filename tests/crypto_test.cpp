@@ -10,7 +10,7 @@ int main() {
 
 
   //Teste md5
-  assert(Crypto::hex(Crypto::md5("Test")) == "dc647eb65e6711e155375218212b3964");
+  assert(Crypto::hex(Crypto::md5("Password")) == "dc647eb65e6711e155375218212b3964");
   
   // Results copied from http://www.freecodeformat.com/pbkdf2.php
   assert(Crypto::hex(Crypto::pbkdf2("Password", "Salt", 4096, 128 / 8)) == "f66df50f8aaa11e4d9721e1312ff2e66");
