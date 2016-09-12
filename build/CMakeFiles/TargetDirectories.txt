@@ -1,8 +1,0 @@
-/home/haldor/Skole/openssl-example/build/CMakeFiles/edit_cache.dir
-/home/haldor/Skole/openssl-example/build/CMakeFiles/rebuild_cache.dir
-/home/haldor/Skole/openssl-example/build/CMakeFiles/test.dir
-/home/haldor/Skole/openssl-example/build/CMakeFiles/examples.dir
-/home/haldor/Skole/openssl-example/build/tests/CMakeFiles/test.dir
-/home/haldor/Skole/openssl-example/build/tests/CMakeFiles/edit_cache.dir
-/home/haldor/Skole/openssl-example/build/tests/CMakeFiles/rebuild_cache.dir
-/home/haldor/Skole/openssl-example/build/tests/CMakeFiles/crypto_test.dir
