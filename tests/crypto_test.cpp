@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
   // Results copied from https://caligatio.github.io/jsSHA/
+  assert(Crypto::hex(Crypto::md5("Test")) == "2205e48de5f93c784733ffcca841d2b5");
   assert(Crypto::hex(Crypto::sha1("Test")) == "640ab2bae07bedc4c163f679a746f7ab7fb5d1fa");
   assert(Crypto::hex(Crypto::sha1("Test", 2)) == "af31c6cbdecd88726d0a9b3798c71ef41f1624d5");
 
