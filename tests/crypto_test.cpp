@@ -13,7 +13,7 @@ int main() {
   assert(Crypto::hex(Crypto::md5("Password")) == "dc647eb65e6711e155375218212b3964");
   
   // teste sha256
-  assert(Crypto::hex(Crypto::sha1("Test")) == "e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a");
+  assert(Crypto::hex(Crypto::sha1("Password")) == "e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a");
   // Results copied from http://www.freecodeformat.com/pbkdf2.php
   assert(Crypto::hex(Crypto::pbkdf2("Password", "Salt", 4096, 128 / 8)) == "f66df50f8aaa11e4d9721e1312ff2e66");
   assert(Crypto::hex(Crypto::pbkdf2("Password", "Salt", 8192, 512 / 8)) == "a941ccbc34d1ee8ebbd1d34824a419c3dc4eac9cbc7c36ae6c7ca8725e2b618a6ad22241e787af937b0960cf85aa8ea3a258f243e05d3cc9b08af5dd93be046c");

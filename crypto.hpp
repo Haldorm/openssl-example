@@ -58,7 +58,14 @@ public:
 
   /// Return the SHA-512 (512-bit) hash from input.
   static std::string sha512(const std::string &input, size_t iterations = 1) {
-    throw std::logic_error("not yet implemented");
+    std::string hash;
+    hash.resize(512 / 8);
+    SHA1((const unsigned char *)input.c_str(), input.size(), (unsigned char *)hash.c_str());
+
+    for (size_t c = 1; c < iterations; ++c)
+      SHA1((const unsigned char *)hash.c_str(), hash.size(), (unsigned char *)hash.c_str());
+
+    return hash;
   }
 
   /// Return key from the Password-Based Key Derivation Function 2 (PBKDF2).
