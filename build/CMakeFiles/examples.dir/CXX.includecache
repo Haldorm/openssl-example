@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/haldor/Skole/openssl-example/crypto.hpp
+openssl/evp.h
+-
+openssl/sha.h
+-
+sstream
+-
+iomanip
+-
+string
+-
+
+/home/haldor/Skole/openssl-example/examples.cpp
+crypto.hpp
+/home/haldor/Skole/openssl-example/crypto.hpp
+iostream
+-
+
