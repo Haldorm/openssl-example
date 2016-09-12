@@ -1,7 +1,7 @@
 # Example C++ Application using OpenSSL [![Build Status](https://travis-ci.org/ntnu-tdat3020/openssl-example.svg?branch=master)](https://travis-ci.org/ntnu-tdat3020/openssl-example)
 
 ## Prerequisites
-The C++ IDE [juCi++](https://github.com/cppit/jucipp) should be installed.
+The C++ IDE [juCi++](https://github.com/cppit/jucipp) should be instaled.
 
 ## Installing dependencies
 
