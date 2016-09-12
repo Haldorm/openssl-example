@@ -48,10 +48,10 @@ public:
   static std::string sha256(const std::string &input, size_t iterations = 1) {
     std::string hash;
     hash.resize(256 / 8);
-    SHA1((const unsigned char *)input.c_str(), input.size(), (unsigned char *)hash.c_str());
+    SHA256((const unsigned char *)input.c_str(), input.size(), (unsigned char *)hash.c_str());
 
     for (size_t c = 1; c < iterations; ++c)
-      SHA1((const unsigned char *)hash.c_str(), hash.size(), (unsigned char *)hash.c_str());
+      SHA256((const unsigned char *)hash.c_str(), hash.size(), (unsigned char *)hash.c_str());
 
     return hash;
   }
